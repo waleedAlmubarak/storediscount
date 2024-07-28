@@ -43,7 +43,7 @@ When executing this command successfully, you will get:
 Go to ```target/site/jacoco``` directory. Open the `index.html` file in a web browser to view the coverage report.
 
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://raw.githubusercontent.com/waleedAlmubarak/storediscount/main/src/main/resources/assets/coverage.png)
 
 **Static Code Analysis**
 
@@ -56,7 +56,7 @@ To run static code analysis tests, run the following command
 Go to ```target/site``` directory. Open the `checkstyle.html` file in a web browser to view code analysis report.
 
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://raw.githubusercontent.com/waleedAlmubarak/storediscount/main/src/main/resources/assets/checkstyles.png)
 
 
 

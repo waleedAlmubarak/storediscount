@@ -11,6 +11,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class StoreDiscountsApplicationTests {
 
     @Test
+    void testMain() {
+        StoreDiscountsApplication.main(new String[] {});
+    }
+
+    @Test
     void contextLoads() {
 
         List<Double> discounts = List.of(

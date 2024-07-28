@@ -1,6 +1,3 @@
-/**
- * Main package, intro to application
- */
 package com.example.storediscounts;
 
 import org.springframework.boot.SpringApplication;

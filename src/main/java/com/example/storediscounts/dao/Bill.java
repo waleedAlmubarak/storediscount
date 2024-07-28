@@ -1,26 +1,54 @@
 package com.example.storediscounts.dao;
 
-import lombok.*;
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 
 import java.util.List;
 
+/**
+ * Represents a bill with a list of bill items.
+ *
+ * <p>
+ * The {@code Bill} class provides methods to calculate the total bill amount
+ * and the total bill amount excluding grocery items.
+ * </p>
+ *
+ * <p>
+ * This class uses Lombok annotations for boilerplate code generation:
+ * {@link Data}, {@link AllArgsConstructor},
+ * {@link Builder}.
+ * </p>
+ */
+
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ToString
 public class Bill {
 
+    /**
+     * The list of bill items.
+     */
     private List<BillItem> items;
 
-    public double getTotalBill() {
+    /**
+     * Calculates the total bill amount.
+     *
+     * @return the total amount of the bill
+     */
+    public final double getTotalBill() {
         return items
                 .stream()
                 .mapToDouble(BillItem::getPrice)
                 .sum();
     }
 
-    public double getTotalBillWithoutGrocery() {
+    /**
+     * Calculates the total bill amount excluding grocery items.
+     *
+     * @return the total amount of the bill without grocery items
+     */
+    public final double getTotalBillWithoutGrocery() {
         return  items
                 .stream()
                 .filter(item -> !item.isGrocery())
